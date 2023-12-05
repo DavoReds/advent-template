@@ -1,11 +1,11 @@
-fn main() {
-    let input = include_str!("../{{project-name}}_input.txt");
-    let result = process_input(input);
-    println!("{result}");
+fn process_input(input: &str) -> u32 {
+    0
 }
 
-pub fn process_input(input: &str) {
-    todo!()
+fn main() {
+    let input = include_str!("../input.txt");
+    let result = process_input(input);
+    println!("{result}");
 }
 
 #[cfg(test)]
@@ -18,7 +18,7 @@ mod tests {
 
         let result = process_input(input);
 
-        assert_eq!(, result);
+        assert_eq!(0, result);
     }
 }
 
